@@ -6,9 +6,9 @@ const {generateNumberArray} = require('./utils/utils');
 
 const app = ()=>{
   //------ BINARY SEARCH -------------
-  const arr = generateNumberArray(1,99999999);
+  const arr = generateNumberArray(1,99999);
   console.time();
-  const numberToFind = binarySearch(arr, 100000);
+  const numberToFind = binarySearch(arr, 768);
   console.log(numberToFind);
   console.timeEnd();
 }
