@@ -1,4 +1,6 @@
-const generateNumberArray = (start = 0, end = 100)=>{
+
+
+export const generateNumberArray = (start = 0, end = 100)=>{
     let array = [];
     let startNumber = start;
     let endNumber = end;
@@ -15,6 +17,3 @@ const generateNumberArray = (start = 0, end = 100)=>{
     return array;
 }
 
-module.exports = {
-    generateNumberArray
-}

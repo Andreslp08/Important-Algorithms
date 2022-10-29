@@ -1,10 +1,9 @@
 
-const binarySearch = (sortedArray = [], value )=>{
-    if(!sortedArray &&  typeof sortedArray !== 'sortedArray'){
-        console.log("invalid parameter type or is null");
-        return false;
+export const binarySearch = (sortedArray = [], value )=>{
+    if(Array.isArray(sortedArray)===false){
+        throw new Error('Binary Search: sortedArray must be a integer array')
     }
-    let result = false;
+    let result:any = false;
     let left = 0;
     let right = sortedArray.length - 1;
 
@@ -27,8 +26,3 @@ const binarySearch = (sortedArray = [], value )=>{
 
     return result;
 }
-
-module.exports ={
-    binarySearch
-}
-
